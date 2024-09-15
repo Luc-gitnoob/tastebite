@@ -32,7 +32,6 @@ export const getRestaurants = async (
     throw new Error("Unexpected response format");
   } catch (err) {
     console.error(err);
-    // Handle the error appropriately here
   }
 };
 
@@ -47,7 +46,6 @@ export const getRestaurantById = async (
     throw new Error("Unexpected response format");
   } catch (err) {
     console.error(err);
-    // Handle the error appropriately here
   }
 };
 
@@ -67,7 +65,6 @@ export const searchRestaurants = async (
     throw new Error("Unexpected response format");
   } catch (err) {
     console.error(err);
-    // Handle the error appropriately here
   }
 };
 
@@ -87,7 +84,6 @@ export const searchRestaurantsByName = async (
     throw new Error("Unexpected response format");
   } catch (err) {
     console.error(err);
-    // Handle the error appropriately here
   }
 };
 
@@ -110,7 +106,6 @@ export const searchNearbyRestaurants = async (
     throw new Error("Unexpected response format");
   } catch (err) {
     console.error(err);
-    // Handle the error appropriately here
   }
 };
 
@@ -136,6 +131,5 @@ export const searchByImage = async (
     throw new Error("Unexpected response format");
   } catch (err) {
     console.error(err);
-    // Handle the error appropriately here
   }
 };

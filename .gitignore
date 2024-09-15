@@ -1,5 +1,7 @@
 server/node_modules
 
+.node_modules
+
 web/# Logs
 web/logs
 web/*.log

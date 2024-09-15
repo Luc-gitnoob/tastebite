@@ -42,7 +42,7 @@ export interface Event {
   title: string;
   display_time: string;
   book_link: string;
-  restaurants: any[]; // If you know the structure, replace `any[]` with a more specific type
+  restaurants: any[];
   disclaimer: string;
   friendly_start_date: string;
   is_end_time_set: number;
@@ -56,10 +56,9 @@ export interface Event {
   event_category_name: string;
 }
 
-// Updated type for restaurant based on the provided schema
 export interface IRestaurant {
   has_online_delivery: number;
-  photos_url: string; // Update if this should be an array or an image URL
+  photos_url: string;
   url: string;
   price_range: number;
   apikey: string;
@@ -73,7 +72,7 @@ export interface IRestaurant {
   average_cost_for_two: number;
   book_url: string;
   switch_to_order_menu: number;
-  offers: any[]; // If you know the structure, replace `any[]` with a more specific type
+  offers: any[];
   has_table_booking: number;
   location: Location;
   featured_image: string;
@@ -84,14 +83,14 @@ export interface IRestaurant {
   establishment_types: any[];
   events_url: string;
   restaurantId: number;
-  restaurantName: string; // Ensure this matches the backend field
+  restaurantName: string;
   countryCode: number;
   city: string;
   address: string;
   locality: string;
   localityVerbose: string;
-  longitude: number; // Consider changing to string if the API provides coordinates as strings
-  latitude: number; // Consider changing to string if the API provides coordinates as strings
+  longitude: number;
+  latitude: number;
   averageCostForTwo: number;
   hasTableBooking: string;
   hasOnlineDelivery: string;

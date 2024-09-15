@@ -12,7 +12,6 @@ const DetailsPage = () => {
   const { data } = useQuery({
     queryKey: ["restaurants", restaurantId],
     queryFn: () => getRestaurantById(String(restaurantId)),
-    // placeholderData: keepPreviousData,
   });
 
   return (
@@ -36,7 +35,7 @@ const DetailsPage = () => {
             <h1 className="text-3xl font-bold text-white md:text-5xl">
               {data?.name}
             </h1>
-            <p className="text-lg text-white/80 mt-2">{data?.cuisines}</p>
+            <p className="text-lg text-white/80 mt-2">{data?.restaurantName}</p>
           </div>
         </div>
       </section>

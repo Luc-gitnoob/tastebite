@@ -38,5 +38,3 @@ export const getRestaurantById = async (id: number) => {
     throw handleError(error);
   }
 };
-
-// Add other API methods as needed

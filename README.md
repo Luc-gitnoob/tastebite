@@ -1,10 +1,6 @@
 
 ---
 
-# Project Assignment: Zomato Restaurant Listing & Searching
-
-## Key Use Cases
-
 ### Data Loading
 
 An independent script is used to load the Zomato restaurant data into a MySQL database. The script, located in the `Config.java` file of the backend, scrapes JSON and CSV files and loads the data accordingly. The file path is:
@@ -71,4 +67,3 @@ Enable search for restaurants by name and description.
 
 
 ---
-# tastebite

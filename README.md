@@ -5,7 +5,6 @@
 ## Key Use Cases
 
 ### Data Loading
-Create an independent script to load the Zomato restaurant data available [here](https://www.kaggle.com/datasets/shrutimehta/zomato-restaurants-data) into a database.
 
 An independent script is used to load the Zomato restaurant data into a MySQL database. The script, located in the `Config.java` file of the backend, scrapes JSON and CSV files and loads the data accordingly. The file path is:
 ```
@@ -16,11 +15,6 @@ server/src/main/java/com/zomato/zomato_app/config/Config.java
 
 
 ### Web API Service
-
-Develop a web API service with the following endpoints to serve the content loaded in the previous step:
-- **Get Restaurant by ID**: Retrieve details of a specific restaurant by its ID.
-  - **Endpoint**: `api/restaurants/{id}`
-  - **Description**: Fetches details of a restaurant using its unique ID.
     
   - ![image](https://github.com/user-attachments/assets/d736833f-9800-426a-a68e-7b8511c5e6f8)
   
@@ -32,17 +26,13 @@ Develop a web API service with the following endpoints to serve the content load
 
 
 ### User Interface
-Develop a web application with the following pages, which must connect to the web API service:
-
 
 #### Restaurant List Page
-Display a list of restaurants. Clicking on a restaurant should navigate the user to the restaurant's detail page.
 
 ![Restaurant List Page](https://github.com/user-attachments/assets/d7c094e0-3e2a-4787-9fa3-6ada8f2980de)
 
 
 #### Restaurant Detail Page
-Show details of a specific restaurant.
 
 ![Restaurant Detail Page](https://github.com/user-attachments/assets/a1275d5f-ec3d-4220-b1dd-256078b92314)
 
@@ -76,4 +66,3 @@ Enable search for restaurants by name and description.
 
 
 ---
-# tastebite

@@ -1,5 +1,3 @@
-Here’s how you can update the README to include these details:
-
 ---
 
 # Project Assignment: Zomato Restaurant Listing & Searching

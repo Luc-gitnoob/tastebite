@@ -20,7 +20,12 @@ import {
   searchRestaurantsByName,
 } from "@/api/restaurants";
 import { useQuery } from "@tanstack/react-query";
-import { IRestaurant } from "@/lib/types";
+
+export type State = {
+  page: number;
+  setPage: React.Dispatch<SetStateAction<number>>;
+  data: any;
+};
 
 const formSchema = z.object({ name: z.string().min(1).max(255) });
 
@@ -85,7 +90,6 @@ const Homepage = () => {
 
   useEffect(() => setRestaurants(data), [data]);
 
-  // Use current location to search for nearby restaurants
   async function setLocation() {
     navigator.geolocation.getCurrentPosition(async (position) => {
       const nearbyRestaurants = await searchNearbyRestaurants(
@@ -100,7 +104,6 @@ const Homepage = () => {
 
   return (
     <div>
-      {/* Name search form */}
       <div className="flex justify-center">
         <NameSearchForm setRestaurants={setRestaurants} setPage={setPage} />
       </div>
@@ -109,7 +112,6 @@ const Homepage = () => {
         <p className="text-gray-400">--------- or --------</p>
       </div>
 
-      {/* Use current location button */}
       <div className="flex justify-center">
         <Button
           onClick={setLocation}
@@ -124,7 +126,6 @@ const Homepage = () => {
         </Button>
       </div>
 
-      {/* Restaurant list */}
       <div className="mt-20">
         <RestaurantList page={page} setPage={setPage} data={restaurants} />
       </div>
